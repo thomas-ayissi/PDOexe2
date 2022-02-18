@@ -3,15 +3,14 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="a0e508f8-a658-4975-ba82-96d8aae9127a" name="vm" url="http://localhost">
-        <fileTransfer host="localhost" port="2022" rootFolder="/home/jetbrains/upload" accessType="SFTP" username="vagrant">
+        <fileTransfer rootFolder="/home/jetbrains/upload" accessType="SFTP" sshConfigId="abd5b981-378d-4fa6-be89-ab9e8f36c111" sshConfig="vm" username="vagrant">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="2022" />
         </fileTransfer>
       </webServer>
       <webServer id="e24a4f13-fc23-4893-9a7c-b23c1be9335b" name="web_debugging" url="http://localhost:8081">
-        <fileTransfer port="0" accessType="LOCAL" />
+        <fileTransfer accessType="LOCAL" port="0" />
       </webServer>
     </option>
   </component>
