@@ -1,5 +1,6 @@
 <?php
 if ($_SESSION["id"] !== session_id() || isset($_GET["disconnect"])) {
+<<<<<<< HEAD
     $_SESSION = [];
     if (ini_get("session.use_cookies")) {
         $params = session_get_cookie_params();
@@ -14,6 +15,9 @@ if ($_SESSION["id"] !== session_id() || isset($_GET["disconnect"])) {
         );
     }
     session_destroy();
+=======
+    disconnect();
+>>>>>>> upstream/main
     header("Location: ./");
     exit();
 }
@@ -25,8 +29,22 @@ if ($_SESSION["id"] !== session_id() || isset($_GET["disconnect"])) {
  * Ajout - Crud
  */
 if (isset($_GET['add'])) {
+    /* A remplir quand j'aurais les champs de la vue */
+    if (isset($_POST[""]) && isset($_POST[""]) && isset($_POST[""]) && isset($_POST[""])) {
+        $title = userEntryProtection($_POST[""]);
+        $text = userEntryProtection($_POST[""]);
+        $user = (int) ($_POST[""]);
+        $sections = [];
+        foreach ($_POST[""] as $section) {
+            array_push($sections, (int) $section);
+        }
+        thearticleInsert($db, $title, $text, $user, $sections);
+    }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 
 
     /**

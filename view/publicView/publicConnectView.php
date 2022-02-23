@@ -16,13 +16,14 @@
       <a href="./" class="navbar-brand">Accueil</a>
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home
+          <a class="nav-link active" href="./">Home
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item dropdown show">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Section</a>
           <div class="dropdown-menu" aria-labelledby="themes">
+<<<<<<< HEAD
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
@@ -57,6 +58,18 @@
       <ul class="navbar-nav ms-md-auto">
 
 
+=======
+            <?php
+            foreach ($sections as $section) {
+            ?>
+              <a class="dropdown-item" href="?idsection=<?= $section['idthesection'] ?>"><?= $section['thesectiontitle'] ?></a>
+            <?php
+            }
+            ?>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+>>>>>>> upstream/main
       </ul>
     </div>
   </div>
@@ -66,7 +79,11 @@
 
 
   <br>
+<<<<<<< HEAD
   <p class="container">Veuillez vous connecter</p>
+=======
+  <p class="container h1">Veuillez vous connecter</p>
+>>>>>>> upstream/main
   <div class="container">
     <?php
     if (isset($error)) :

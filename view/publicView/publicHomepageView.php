@@ -15,7 +15,7 @@
       <a href="./" class="navbar-brand">Accueil</a>
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home
+          <a class="nav-link active" href="./">Home
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
@@ -50,37 +50,40 @@
       <div class="row">
         <div class="col-lg-8 col-md-7 col-sm-6">
           <h1>Articles de notre site</h1>
-          <p class="lead">A touch of class</p>
+
         </div>
-        <div class="col-lg-4 col-md-5 col-sm-6">
-          <div class="sponsor">
-            test
-          </div>
-        </div>
+
       </div>
     </div>
 
   </div>
 
   <div class="container mt-4">
-    <div class="bs-docs-section">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="page-header">
-            <h1 id="containers">Containers</h1>
 
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="row">
       <div class="col-lg-12">
-        <h2>List groups</h2>
+        <h2>Nombre d'articles : <?= count($articles) ?></h2>
+        <hr>
       </div>
     </div>
   </div>
+  <div class="container mx-30">
+    <?php
+    //var_dump($articles);
+    foreach ($articles as $article) {
+    ?>
+      <h2><?= $article["thearticletitle"] ?></h2>
+      <p><?= $article["thearticletext"] ?> <a href="?idarticle=<?= $article["idthearticle"] ?>">Lire la suite</a></p>
+      <p> <a href="?idauteur=<?= $article["idtheuser"] ?>"><?= $article["theusername"] ?></a></p>
+      <p><?= $article["thearticledate"] ?></p>
+      <p><?= $article["thesectiontitle"] ?></p>
+    <?php
+    }
+    ?>
+  </div>
 
   <?php
+<<<<<<< HEAD
   //var_dump($articles);
   foreach ($articles as $article) {
   ?>
@@ -94,5 +97,7 @@
   ?>
 
   <?php
+=======
+>>>>>>> upstream/main
   include '../view/footer.php';
   ?>

@@ -4,8 +4,11 @@ session_start();
  * Chargement des dépendances
  */
 require_once "../config.php";
+require_once "../model/theuserModel.php";
+require_once "../model/connectionModel.php";
 require_once "../model/theSectionModel.php";
 require_once "../model/theArticleModel.php";
+require_once "../model/theuserModel.php";
 
 
 /**
@@ -22,6 +25,8 @@ try {
 
 $test = thearticleSelectAll($db);
 //var_dump(theSectionSelectAllNav($db));
+
+//var_dump(theuserSelectAll($db));
 
 //var_dump($test);
 

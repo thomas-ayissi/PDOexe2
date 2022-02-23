@@ -35,10 +35,17 @@ function theSectionSelectAllNav(PDO $db)
 /*Commented 2 days ago
 Quand il existe la variable GET idsection*/
 
+// set the PDO error mode to exception
+
+if(isset($_GET['idsection'])
+{
 
 
+}
 /*Création d'une vue pour afficher les détails de la section et
 les 20 derniers articles de cette section (comme l'accueil)*/
+
+
 
 /*Dans model\theSectionModel.php créez 1 fonctions :
 voir avec Thomas pour thesectionSelectOneById(PDO $db, int $id)
