@@ -16,40 +16,15 @@
       <a href="./" class="navbar-brand">Accueil</a>
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link active" href="#">Home
-=======
           <a class="nav-link active" href="./">Home
->>>>>>> upstream/main
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Section</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </li>
-=======
           <a class="nav-link" href="?add">Créer un nouvel article</a>
         </li>
 
 
->>>>>>> upstream/main
       </ul>
       <ul class="navbar-nav ms-md-auto">
 
@@ -66,21 +41,10 @@
     <div class="page-header" id="banner">
       <div class="row">
         <div class="col-lg-8 col-md-7 col-sm-6">
-<<<<<<< HEAD
-          <h1>Articles de notre site</h1>
-          <p class="lead">A touch of class</p>
-        </div>
-        <div class="col-lg-4 col-md-5 col-sm-6">
-          <div class="sponsor">
-            test
-          </div>
-        </div>
-=======
           <h1>Gestion des articles</h1>
 
         </div>
 
->>>>>>> upstream/main
       </div>
     </div>
 
@@ -91,25 +55,13 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="page-header">
-<<<<<<< HEAD
-            <h1 id="containers">Containers</h1>
-=======
 
->>>>>>> upstream/main
 
           </div>
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-    <div class="row">
-      <div class="col-lg-12">
-        <h2>List groups</h2>
-      </div>
-    </div>
-=======
 
->>>>>>> upstream/main
   </div>
 
   <?php
